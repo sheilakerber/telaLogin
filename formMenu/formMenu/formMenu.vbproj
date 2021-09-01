@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D8D83033-7182-443D-92AE-4093A79707A0}</ProjectGuid>
+    <ProjectGuid>{380A4361-CC92-496B-93DE-793F433F8CFE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>telaLogin.My.MyApplication</StartupObject>
-    <RootNamespace>telaLogin</RootNamespace>
-    <AssemblyName>telaLogin</AssemblyName>
+    <StartupObject>formMenu.My.MyApplication</StartupObject>
+    <RootNamespace>formMenu</RootNamespace>
+    <AssemblyName>formMenu</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -20,7 +20,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>telaLogin.xml</DocumentationFile>
+    <DocumentationFile>formMenu.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>telaLogin.xml</DocumentationFile>
+    <DocumentationFile>formMenu.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -77,12 +77,6 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formMenu.Designer.vb">
-      <DependentUpon>formMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="formMenu.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -102,9 +96,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formMenu.resx">
-      <DependentUpon>formMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

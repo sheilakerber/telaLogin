@@ -8,7 +8,9 @@
         End If
 
         If txtUsuario.Text = "ADMIN" And txtSenha.Text = "ABC123" Then
-            MsgBox("Login efetuado com sucesso!", MsgBoxStyle.OkOnly, "Logado!")
+            ' MsgBox("Login efetuado com sucesso!", MsgBoxStyle.OkOnly, "Logado!")
+            formMenu.Show()   ' abrir nova tela
+            Me.Dispose()      ' fechar tela atual (Me = Form1)
         Else
             MsgBox("Usuário ou senha incorreto. Por favor, verifique seus dados!", MsgBoxStyle.Critical, "Erro ao logar!")
         End If
